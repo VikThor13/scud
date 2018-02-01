@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+        <title>Система контроля управления доступом</title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+                <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="/script.js"></script>
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="/scripts/jquery.ui.datepicker-ru.js"></script>
+		<script>
+			$(function() {
+				$(".datepicker").datepicker($.datepicker.regional["ru"]);
+				$(".datepicker").mask("99.99.9999", {placeholder: "дд.мм.гггг" });
+			});
+		</script>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<link href="/css/style.css" type="text/css" rel="stylesheet"/>
+		<link href="/styles.css" type="text/css" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <div class="wrapper container">
+            <header class="container">
+				<div class="phone_guber">
+					Телефон доверия Губернатора: <b>8-800-200-71-02</b>						
+				</div>
+				<nav role="navigation" class="navbar top navbar-default">
+                    <div class="navbar-header">
+                        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbarCollapse" class="collapse navbar-collapse">
+                        <ul class="nav">
+							<li><a href="http://tularegion.ru">Портал правительства Тульской области</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="container">
+                    <div class="row info">
+                        <div class="unit">
+                            <a href="/" class="logo"><img class="flag pull-left" src="/img/logo.png" alt="Logo"></a>
+							<div class="text">
+								<h3>Система контроля управления доступом</h3>
+								<h5>Правительства Тульской области</h5>
+							</div>
+                            <div class="clearfix"></div>
+						</div>						
+                    </div>
+                </div>
+                <nav role="navigation" class="navbar main navbar-default">
+                    <div class="navbar-header">
+                        <button type="button" data-target="#mainNavbar" data-toggle="collapse" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                </nav>
+            </header>
+			<?php include 'application/views/'.$content_view;?>
+		</div>
+		<footer class="container">
+			<div class="row f-info">
+				<div class="col-md-4 address">
+					<img class="flag pull-left" src="/img/logo.png" alt="">
+					<address>
+						<br>
+						<br>
+						© Все права зарегистрированы.<br>
+						300041, г. Тула, пр. Ленина, д. 2<br>
+						<br>
+					</address>
+				</div>
+				<div class="col-md-8 copyrights">
+					<div class="text-copy">
+						Об информационном содержании вы можете написать администратору сайта.
+					</div>
+					<img class="flag" src="/img/logo_cit.png" alt="">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 help text-center">
+					Масштабируйте сайт используя стандартные сочетания клавиш для вашей операционной системы.        </div>
+			</div>
+		</footer>
+		<div id="toTop"> ^ Наверх </div>
+		<script type="text/javascript">$(function(){$(window).scroll(function(){if($(this).scrollTop()>200){$('#toTop').fadeIn();}else{$('#toTop').fadeOut();}});$('#toTop').click(function(){$('body,html').animate({scrollTop:0},800);});});</script>
+	</body>
+</html>

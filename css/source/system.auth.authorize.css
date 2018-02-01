@@ -1,0 +1,70 @@
+div.form__auth {
+    margin: 0 auto;
+    max-width: 500px;
+}
+div.form__auth form {
+    padding :0;
+    margin: 0;
+    text-align: center;
+}
+div.form__auth-line {
+    border-bottom: 1px solid #E3E3E3;
+    padding-bottom: 10px;
+}
+div.form__auth-title {
+    font-size: 140%;
+    border-bottom: solid 1px #E3E3E3;
+    text-align: center;
+    padding-bottom: 0;
+}
+div.form__auth-note{
+    margin: 18px 0 6px 3px;
+    text-align: center;
+}
+table.form__auth-table{
+    margin: 0 auto;
+}
+table.form__auth-table td {
+    padding: 3px;
+}
+table.form__auth-table tr {
+    text-align: right;
+}
+div.form__auth input.form__auth-input {
+    vertical-align: middle;
+    border: 1px solid #d9e1e2;
+}
+div.form__auth span.form__auth-secure {
+    background-color: #FFFAE3;
+    border: 1px solid #DEDBC8;
+    padding: 2px;
+    display: inline-block;
+    vertical-align: middle;
+}
+div.form__auth div.form__auth-secure-icon {
+    background-image: url(images/sec.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 19px;
+    height: 18px;
+}
+div.form__auth div.form__auth-secure-unlock {
+    background-image: url(images/sec-unlocked.png);
+}
+label{
+    font-weight: normal;
+}
+.authorize-submit-cell input{
+    border: 1px solid #d9e1e2;
+    padding: 5px 40px;
+    border-radius: 4px;    
+}
+.authorize-submit-cell{
+    text-align: center;
+}
+.login_and_pass{
+    text-align: right;
+}
+.login_and_pass_input{
+     text-align: left;
+}

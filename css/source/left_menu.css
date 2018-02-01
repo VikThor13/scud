@@ -1,0 +1,8 @@
+.active_item_menu
+{
+    border-bottom: 2px solid #006bb3!important;
+}
+.active_item_menu:hover{
+    border-bottom: 1px solid #006bb3!important;
+    padding-bottom: 11px!important;
+}

@@ -1,0 +1,52 @@
+<div class="content">
+	<form method="get" action="/scud" name="filtr" class="filtr">
+		<div class="row">
+			Дата ОТ:&nbsp;&nbsp;<input type="text" name="date_ot" class="datepicker" value="<?php if (isset($_GET['date_ot'])) echo $_GET['date_ot'];?>" />&nbsp;&nbsp;&nbsp;&nbsp;
+			Событие: <select name="event" class="res">
+				<option value="all">Все</option>
+				<option value="101" <?php if (isset($_GET['event']) && $_GET['event'] == "101") echo ("selected");?>>Вход сотрудника</option>
+				<option value="102" <?php if (isset($_GET['event']) && $_GET['event'] == "102") echo ("selected");?>>Выход сотрудника</option>
+			</select>
+			<input type="submit" value="Фильтр" class="btn btn-warning">
+		</div>
+		<div class="row">
+			Дата ДО:&nbsp;<input type="text" name="date_do" class="datepicker" value="<?php if (isset($_GET['date_do'])) echo $_GET['date_ot'];?>" />&nbsp;&nbsp;&nbsp;&nbsp;
+			ФИО: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="fio" value="<?php if (isset($_GET['fio'])) echo $_GET['fio'];?>"/>
+			<input type="reset" value="Сброс" onclick='location.href="/"' class="btn btn-warning">
+		</div>
+	</form>
+	<table border="1" width="100%">
+		<colgroup>
+			<col width="20%"></col>
+			<col width="16%"></col>
+			<col width="16%"></col>
+			<col width="16%"></col>
+			<col width="16%"></col>
+			<col width="16%"></col>
+		</colgroup>
+		<thead>
+			<tr>
+				<th>Фамилия</th>
+				<th>Имя</th>
+				<th>Отчество</th>
+				<th>Турникет</th>
+				<th>Событие</th>
+				<th>Дата</th>
+			</tr>
+		</thead>
+		<tbody>
+<?php
+foreach($data as $row){
+	echo "<tr>
+		<td>".$row["LAST_NAME"]."</td>
+		<td>".$row["FIRST_NAME"]."</td>
+		<td>".$row["MIDDLE_NAME"]."</td>
+		<td>".$row["TURNSTILE"]."</td>
+		<td>".$row["EVENT"]."</td>
+		<td>".date_format($row["DATE"], 'd.m.Y H:i')."</td>
+		</tr>";
+};
+?>
+		</tbody>
+	</table>
+</div>

@@ -1,0 +1,21 @@
+	<div class="content">
+		<form method="post" action="/" name="auth" class="auth">
+			<p>Уважаемые пользователи! Введите свои ученые данные для доступа к системе.</p>
+			<table class="tab_center">
+				<tr>
+					<td class="tab_left">Логин:</td>
+					<td><input type="text" name="login" required="" /></td>
+				</tr>
+				<tr>
+					<td class="tab_left">Пароль:</td>
+					<td><input type="password" name="password" required="" /></td>
+				</tr>
+				<tr>
+					<td colspan="2" class="td_submit"><input type="submit" name="submit" value="Войти" class="btn btn-warning"/></td>
+				</tr>
+				<tr>
+					<td colspan="2"><?php echo($data["login_status"]);?></td>
+				</tr>
+			</table>
+		</form>
+	</div>

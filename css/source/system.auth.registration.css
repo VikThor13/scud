@@ -1,0 +1,60 @@
+div.form__register{
+    margin: 0 auto;
+    max-width: 400px;
+    text-align: center;
+}
+div.form__register input.form__register {
+    vertical-align: middle;
+    margin-bottom: 5px;
+    border: 1px solid #d9e1e2;
+}
+div.form__register span.form__register {
+    background-color: #FFFAE3;
+    border: 1px solid #DEDBC8;
+    padding: 2px; display:inline-block;
+    vertical-align: middle;
+}
+div.form__register div.form__register {
+    background-image: url(images/sec.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 19px;
+    height: 18px;
+}
+div.form__register div.form__register {
+    background-image: url(images/sec-unlocked.png);
+}
+.captcha img{
+    padding: 0 0 5px 0;
+}
+.registration_button{
+    border: 1px solid #d9e1e2;
+    padding: 5px 36px;
+    border-radius: 4px;
+    margin: 5px 0 0 0;
+}
+.form__register-title{
+    font-size: 140%;
+    border-bottom: solid 1px #E3E3E3;
+    text-align: center;
+    padding-bottom: 0;
+    margin: 0 0 10px 0;
+}
+.registration_tbody{
+    text-align: right;
+}
+.form__registration-table{
+    float: right;
+}
+.form__registration-table td{
+    padding: 0 5px 0 0;
+}
+.registration_tfoot{
+    text-align: center;
+}
+.captcha{
+    text-align: center;
+}
+.captcha_title{
+    text-align: center;
+}

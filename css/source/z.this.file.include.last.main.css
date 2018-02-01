@@ -1,0 +1,83 @@
+div.breadcrumb{
+    padding: 0;
+    border-bottom: none;
+}
+ul.breadcrumb{
+    border-bottom: 1px solid #d9e1e2;
+}
+.logo{
+    display: block!important;
+    margin-top: 0!important;
+    padding-left: 0!important;
+}
+div.image > img{
+    padding: 0;
+}
+.authorize_page {
+    text-align: center;
+}
+.time_reception td{
+    padding: 5px auto 5px auto;
+}
+.time_reception{
+    border: 1px solid red;
+}
+body .container:not(footer, .feedback)
+{
+	background:#fff !important;
+}
+.show_counter{
+    display: inline-block;
+}
+div.capcha img
+{
+	padding: 0;
+}
+.note-big:before
+{
+	font-style: normal;
+}
+/*Галерея*/
+.img-gallery
+{
+	width: auto !important;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+div.gallery_image_container
+{
+	max-width: 799px;
+	max-height: 515px;
+	text-align: center;
+	vertical-align: middle;
+}
+div.slider_image_container
+{
+	max-width: 189px;
+	max-height: 111px;
+	text-align: center;
+	vertical-align: middle;
+}
+.information_structure
+{
+	font-size: 14px;
+}
+.index-page .important-info a{
+	display: block;
+}
+
+#calendar {
+	margin: 0 auto;
+}
+.fc-title{
+	cursor: pointer;
+}
+.myQtip .qtip-content{
+	font-size: 12px;
+}
+.myQtip .qtip-title{
+	font-size: 12px;
+}
